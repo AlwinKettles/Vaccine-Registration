@@ -15,6 +15,12 @@ namespace Vaccine_Registration
             Console.WriteLine("Enter your SA ID:");
             string userID = Console.ReadLine();
 
+            if (string.IsNullOrEmpty(userID))
+            {
+                Console.WriteLine("ID can't be empty! Input your SA ID once more");
+                userID = Console.ReadLine();
+            }
+
             Console.WriteLine("Enter your Full Name:");
             string userName = Console.ReadLine();
 
